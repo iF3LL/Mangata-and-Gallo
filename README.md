@@ -9,4 +9,5 @@ Applied many of the skills learned so far such as:
 - pseudos
 - bootstrap
 - semantic structure
-Made this on February 19/20, 2024 following my first weekend hackathon.
+
+*Made this on February 19/20, 2024 following my first weekend hackathon.*
