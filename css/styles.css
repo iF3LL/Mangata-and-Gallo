@@ -1,0 +1,168 @@
+body {
+    background-color: #f6eece;
+    font-family: 'Georgia','Verdana', 'Times New Roman';
+    margin: 3rem 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 28rem;
+}
+
+nav {
+    border-radius: 5rem;
+    background-color: #fffbef;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem 8%;
+    box-shadow: 0.3rem .3rem .4rem;
+}
+nav a {
+    display: inline-block;
+    margin: 0.4rem 5%;
+    flex-wrap: wrap
+}
+a:link, a:visited {
+    color: #303086;
+    text-decoration: none; 
+}
+a:hover {
+    color: #8D388D;
+    transition: .25s;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+article ul {
+    padding: 0;
+    display: inline-block;
+}
+article li {
+    text-align: left;
+}
+article button {
+    background-color: #a75da7 !important;
+    border: none !important;
+    transition: 0.2s ease-in;
+}
+article button:hover {
+    background-color: #7c1f7c !important;
+    transition: 0.2s ease-in;
+}
+article img {
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    background-color: #D9CD56;
+    padding: 1rem;
+}
+footer div {
+    flex: 1 0;
+}
+
+.description {
+    background-color: #7070B4;
+    border-radius: 1em;
+    color: #f6f6f6;
+    opacity: 90%;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: 0.2rem double #1d1d6b;
+    transition: 0.5s ease-in-out;
+
+}
+/* .description:hover {
+    background-color: #0b0b4e;
+    opacity: 100%;
+    transition: 0.5s ease-in-out;
+} */
+
+.responsive {
+    max-width: 90%
+}
+.upper-line {
+    max-width: 15rem;
+    color: #5d5860;
+    border-top: 2px solid #5d5860;
+}
+
+#voila {
+    transition: 0.5s;
+    border: 0.2rem solid #0b0b4e;
+}
+#voila:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+#update {
+    margin-top: 2rem;
+}
+#update:active {
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% {transform: rotate(0);}
+    25% {transform: rotate(5deg);}
+    50% {transform: rotate(-5deg)}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(0);}
+} 
+
+@media screen and (max-width: 768px) {    
+    nav {
+        margin: 2rem 2%;
+    }
+    nav a {
+        display: inline-block;
+        margin: 0.4rem 2;
+        flex-wrap: wrap
+    }
+
+    main {
+        margin: 2rem 3%;
+    }
+
+    section {
+        display: block;
+    }
+
+    article, footer div {
+        flex: 1 0 100%;
+        margin: auto;
+        text-align: center;
+    }
+    article {
+        margin-top: 1rem;
+    }
+    footer > div {
+        margin-bottom: .5rem;
+    }
+    #update {
+        margin-top: 1rem;
+    }
+    
+}
